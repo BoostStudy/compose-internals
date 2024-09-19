@@ -7,8 +7,19 @@ pluginManagement {
                 includeGroupByRegex("androidx.*")
             }
         }
+        maven {
+            url = uri("https://jitpack.io")
+        }
         mavenCentral()
         gradlePluginPortal()
+    }
+
+    resolutionStrategy {
+        eachPlugin {
+            if(requested.id.toString() == "com.github.takahirom.decomposer"){
+                useModule("com.github.takahirom:decomposer:main-SNAPSHOT")
+            }
+        }
     }
 }
 dependencyResolutionManagement {
