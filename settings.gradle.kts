@@ -21,4 +21,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "compose-internals"
 include(":app")
- 
+include(":build-logic")
+include(":yangsooplus")
+include(":audxo112")
+include(":ezhoon")
+include(":ldh019")
